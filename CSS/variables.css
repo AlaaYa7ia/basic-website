@@ -1,0 +1,20 @@
+:root{
+    
+    color-scheme: light dark;
+    
+    --brand-primary: #0768AC;
+    --brand-secondary: #03C180;
+    --bg_default: #FFFFFF;
+    --bg_body: #F0F9FF;
+    --lines-color: #DDDDDD;
+    --body-text: #333333;
+    --heart-color: #DC143C;
+
+    --dark-brand-primary: #0768AC;
+    --dark-brand-secondary: #03C180;
+    --dark-bg_default: #1A1A1A;
+    --dark-bg_body: #282828;
+    --dark-lines-color: #000000;
+    --dark-body-text: #EDEDED;
+    --dark-heart-color: #DC143C;
+}

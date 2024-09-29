@@ -1,0 +1,181 @@
+@import url("https://fonts.cdnfonts.com/css/nunito-sans");
+
+body {
+    font-family: "Nunito Sans";
+    font-size:x-small;
+    margin: 30px;
+    height: 100vh;
+    background-color: light-dark(var(--bg_body), var(--dark-bg_body))
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#website-name{
+  color: var(--brand-primary);
+}
+
+button {
+  border-radius: 5px;
+  border-color: var(--bg_body);
+  background-color: var(--bg_default);
+}
+
+.display-flex {
+  display: flex;
+}
+
+.actionsList {
+  margin-top: 13.4px;
+}
+
+
+.main-header{
+  justify-content: space-between;
+  background-color: var(--bg_default);
+}
+
+.triangles{
+  background-color: var(--bg_default);
+}
+
+.sub-header{
+  text-align: center;
+  background-color: var(--bg_default);
+}
+.welcome-msg{
+  color:var(--brand-secondary);
+}
+.sub-welcome-msg{
+  color:var(--body-text);
+  margin-left: 50px;
+}
+
+.sort{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg_default);
+}
+
+.filter{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg_default);
+}
+.search-box{
+  flex-grow: 1;
+}
+#search{
+  flex-grow: 1;
+  margin-bottom: 10px;
+  border-color: var(--lines-color);
+}
+
+/* .search-bar{
+} */
+
+
+
+.select-wrap 
+{
+  border: 1px solid var(--lines-color);
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 0 5px 5px;
+  width:100px;
+}
+
+.select-wrap label
+{
+  font-size:10px;
+  text-transform: uppercase;
+  color: var(--body-text);
+  padding: 2px 8px 0;
+}
+
+select
+{
+  border:0px;
+}
+
+
+
+/**Card Styles**/
+
+.items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: var(--bg_default);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-info-container {
+  padding: 15px 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.topics-title {
+  padding: 20px 0 20px 0;
+}
+
+.rate-author-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.language-name, .card-type  {
+  color: var(--body-test);
+}
+
+.card-type {
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+
+.img-container {
+  height: 150px;
+  overflow: hidden;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.star{
+  color: gold;
+  padding-bottom: 7px;
+}
+
+.author-name{
+  color: var(--author-name);
+}
+
+
+
+/** footer **/
+
+footer{
+  /* margin-top: auto; */
+  text-align: center;
+}
