@@ -6,62 +6,10 @@
     <title>home</title>
     <link rel="stylesheet" href="./CSS/variables.css">
     <link rel="stylesheet" href="./CSS/styles.css">
-    
+    <script src="scripts.js"></script>
 
 </head>
 <body>
-
-    <script>
-        function fetchJSONData() {
-            fetch("./topics.json")
-                .then((res) => {
-                    if (!res.ok) {
-                        throw new Error
-                            (`HTTP error! Status: ${res.status}`);
-                    }
-                    return res.json();
-                })
-                .then((data) =>{
-
-                    let output = "";
-
-                    for(let item of data){
-                        output += `
-                            <div class="card">
-                                <div class="img-container">
-                                    <img src="./assets/Logos/${item.image}" alt="">
-                                </div>
-                                <div class="card-info-container">
-                                    <div class="card-title-container">
-                                        <p class="card-type">${item.category}</p>
-                                        <h3 class="language-name"${item.topic}</h3>
-                                    </div>
-                                    <div class="rate-author-container">
-                                        <div class="stars">
-                                            <ion-icon name="star" class="star"></ion-icon>
-                                            <ion-icon name="star" class="star"></ion-icon>
-                                            <ion-icon name="star" class="star"></ion-icon>
-                                            <ion-icon name="star" class="star"></ion-icon>
-                                            <ion-icon name="star-half-outline" class="star"></ion-icon>
-                                        </div>
-                                        <p class="author-name">Author: ${item.name}</p>
-                                    </div>
-                                </div>
-                            </div>  
-
-                        `;
-		            }
-                    document.querySelector(".items").innerHTML = output;
-                })
-                .catch((error) =>
-                    console.error("Unable to fetch data:", error));
-        }
-        fetchJSONData();
-
-    </script>
-
-    <dev class="products"></dev>
-
     <header>
         <div class="display-flex main-header">
             <h3 id="website-name">Web Topics</h3>
@@ -103,7 +51,6 @@
         </div>
 
         <div class="topics-counter">
-            <h1>"24" Web Topics Found</h1>
         </div>
 
         <div class="items">            
