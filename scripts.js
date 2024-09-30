@@ -20,12 +20,12 @@ function fetchJSONData() {
                         <div class="img-container lt-drk">
                             <img src="./assets/Logos/${item.image}" alt="">
                         </div>
-                        <div class="card-info-container lt-drk">
-                            <div class="card-title-container">
-                                <p class="card-type">${item.category}</p>
-                                <h3 class="language-name"${item.topic}</h3>
+                        <div class="info lt-drk">
+                            <div>
+                                <p class="lt-drk">${item.category}</p>
+                                <h1 class="lt-drk">${item.topic}</h1>
                             </div>
-                            <div class="rate-author-container">
+                            <div>
                                 <div class="stars">
                                     <ion-icon name="star" class="star"></ion-icon>
                                     <ion-icon name="star" class="star"></ion-icon>
@@ -33,7 +33,7 @@ function fetchJSONData() {
                                     <ion-icon name="star" class="star"></ion-icon>
                                     <ion-icon name="star-half-outline" class="star"></ion-icon>
                                 </div>
-                                <p class="author-name">Author: ${item.name}</p>
+                                <p class="lt-drk">Author: ${item.name}</p>
                             </div>
                         </div>
                     </div>  
