@@ -4,6 +4,7 @@ Taps first frontend project. CSS, HTML, and simple JS.
 Topics cards list, with header and footer. 
 
 Notes:
+
 1- We need a live server for the project to work.
 
 2- There are many aspects that I haven't covered yet. 
