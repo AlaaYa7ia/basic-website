@@ -5,7 +5,7 @@ body {
     font-size:x-small;
     margin: 30px;
     height: 100vh;
-    background-color: light-dark(var(--bg_body), var(--dark-bg_body))
+    background-color:var(--bg_body)
 }
 
 main {
@@ -23,6 +23,7 @@ button {
   border-color: var(--bg_body);
   background-color: var(--bg_default);
 }
+
 
 .display-flex {
   display: flex;
@@ -178,4 +179,18 @@ img {
 footer{
   /* margin-top: auto; */
   text-align: center;
+}
+
+
+/**dark mode**/
+.dark-mode {
+  background-color: var(--dark-bg_body);
+  color: var(--dark-body-text);
+  border-color: var(--dark-lines-color);
+}
+
+.dark-mode-items {
+  background-color: var(--dark-bg_default);
+  color: var(--dark-body-text);
+  border-color: var(--dark-lines-color);
 }

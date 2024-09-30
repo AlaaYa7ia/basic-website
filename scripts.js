@@ -1,3 +1,5 @@
+
+//fetching data from JSON
 function fetchJSONData() {
     fetch("./topics.json")
         .then((res) => {
@@ -14,11 +16,11 @@ function fetchJSONData() {
 
             for(let item of data){
                 output += `
-                    <div class="card">
-                        <div class="img-container">
+                    <div class="card lt-drk">
+                        <div class="img-container lt-drk">
                             <img src="./assets/Logos/${item.image}" alt="">
                         </div>
-                        <div class="card-info-container">
+                        <div class="card-info-container lt-drk">
                             <div class="card-title-container">
                                 <p class="card-type">${item.category}</p>
                                 <h3 class="language-name"${item.topic}</h3>
@@ -45,4 +47,20 @@ function fetchJSONData() {
             console.error("Unable to fetch data:", error));
 }
 fetchJSONData();
+
+
+// light - dark mood
+function toggleDarkMode() {
+    document.querySelectorAll('.lt-drk').forEach(el =>el.classList.toggle('dark-mode-items'));
+    let isDark = document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+  }
+  
+  // On page load
+  document.addEventListener('DOMContentLoaded', (event) => {
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        document.querySelectorAll('.lt-drk').forEach(el =>el.classList.add('dark-mode-items'));
+    }
+  });
 
