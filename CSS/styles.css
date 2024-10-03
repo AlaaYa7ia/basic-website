@@ -107,6 +107,12 @@ header{
   border-color: var( --lines-color);
   border-style: none;
 }
+
+#search-outline{
+  position: absolute; 
+  margin-top: 12px; 
+  margin-left: 5px;
+}
 .select-wrap 
 {
   border-left: 1px solid var(--lines-color);
@@ -126,7 +132,7 @@ select
 {
   color:var(--body-text);
   border:0px;
-  background-color:var(--bg_body);
+  background-color:var(--bg_default);
 }
 
 
