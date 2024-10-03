@@ -3,15 +3,16 @@
 body {
     font-family: "Nunito Sans";
     font-size:x-small;
-    margin: 30px;
     height: 100vh;
-    background-color:var(--bg_body)
+    background-color:var(--bg_body);
+    color:var(--body-text);
 }
 
 main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 30px;
 }
 
 #website-name{
@@ -22,6 +23,8 @@ button {
   border-radius: 5px;
   border-color: var(--bg_body);
   background-color: var(--bg_default);
+  color:var(--body-text);
+
 }
 
 
@@ -77,6 +80,9 @@ header{
 }
 
 /** search bar **/
+.search-bar{
+  margin-top: 20px;
+}
 
 .sort{
   display: flex;
@@ -95,10 +101,13 @@ header{
 #search{
   flex-grow: 1;
   margin-bottom: 10px;
+  background-color:var(--bg_default);
+  border-color: var( --lines-color);
+  border-style: none;
 }
 .select-wrap 
 {
-  border: 1px solid var(--lines-color);
+  border-left: 1px solid var(--lines-color);
   border-radius: 2px;
   margin-bottom: 10px;
   padding: 0 5px 5px;
@@ -113,7 +122,9 @@ header{
 
 select
 {
+  color:var(--body-text);
   border:0px;
+  background-color:var(--bg_body);
 }
 
 
@@ -172,13 +183,18 @@ footer{
 
 /**dark mode**/
 .dark-mode {
-  background-color: var(--dark-bg_body);
+  /* background-color: var(--dark-bg_body);
   color: var(--dark-body-text);
-  border-color: var(--dark-lines-color);
+  border-color: var(--dark-lines-color); */
+
+  --bg_default: var(--dark-bg_default);
+  --bg_body: var(--dark-bg_body);
+  --lines-color: var(--dark-lines-color);
+  --body-text: var(--dark-body-text);
 }
 
-.dark-mode-items {
+/* .dark-mode-items {
   background-color: var(--dark-bg_default);
   color: var(--dark-body-text);
   border-color: var(--dark-lines-color);
-}
+} */

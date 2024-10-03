@@ -51,7 +51,7 @@ fetchJSONData();
 
 // light - dark mood
 function toggleDarkMode() {
-    document.querySelectorAll('.lt-drk').forEach(el =>el.classList.toggle('dark-mode-items'));
+    //document.querySelectorAll('.lt-drk').forEach(el =>el.classList.toggle('dark-mode-items'));
     let isDark = document.body.classList.toggle('dark-mode');
     localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
   }
@@ -60,7 +60,7 @@ function toggleDarkMode() {
   document.addEventListener('DOMContentLoaded', (event) => {
     if (localStorage.getItem('darkMode') === 'enabled') {
         document.body.classList.add('dark-mode');
-        document.querySelectorAll('.lt-drk').forEach(el =>el.classList.add('dark-mode-items'));
+        //document.querySelectorAll('.lt-drk').forEach(el =>el.classList.add('dark-mode-items'));
     }
   });
 
