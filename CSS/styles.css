@@ -6,6 +6,7 @@ body {
     height: 100vh;
     background-color:var(--bg_body);
     color:var(--body-text);
+    margin:0%;
 }
 
 main {
@@ -39,6 +40,7 @@ button {
 header{
   display: flex;
   flex-direction: column;
+
 }
 
 .main-header{
