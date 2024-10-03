@@ -81,7 +81,7 @@ header{
 
 /** search bar **/
 .search-bar{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .sort{
@@ -183,18 +183,8 @@ footer{
 
 /**dark mode**/
 .dark-mode {
-  /* background-color: var(--dark-bg_body);
-  color: var(--dark-body-text);
-  border-color: var(--dark-lines-color); */
-
   --bg_default: var(--dark-bg_default);
   --bg_body: var(--dark-bg_body);
   --lines-color: var(--dark-lines-color);
   --body-text: var(--dark-body-text);
 }
-
-/* .dark-mode-items {
-  background-color: var(--dark-bg_default);
-  color: var(--dark-body-text);
-  border-color: var(--dark-lines-color);
-} */

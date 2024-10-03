@@ -16,14 +16,14 @@ function fetchJSONData() {
 
             for(let item of data){
                 output += `
-                    <div class="card lt-drk">
-                        <div class="img-container lt-drk">
+                    <div class="card  ">
+                        <div class="img-container  ">
                             <img src="./assets/Logos/${item.image}" alt="">
                         </div>
-                        <div class="info lt-drk">
+                        <div class="info  ">
                             <div>
-                                <p class="lt-drk">${item.category}</p>
-                                <h1 class="lt-drk">${item.topic}</h1>
+                                <p  >${item.category}</p>
+                                <h1  >${item.topic}</h1>
                             </div>
                             <div>
                                 <div class="stars">
@@ -33,7 +33,7 @@ function fetchJSONData() {
                                     <ion-icon name="star" class="star"></ion-icon>
                                     <ion-icon name="star-half-outline" class="star"></ion-icon>
                                 </div>
-                                <p class="lt-drk">Author: ${item.name}</p>
+                                <p  >Author: ${item.name}</p>
                             </div>
                         </div>
                     </div>  
@@ -51,7 +51,6 @@ fetchJSONData();
 
 // light - dark mood
 function toggleDarkMode() {
-    //document.querySelectorAll('.lt-drk').forEach(el =>el.classList.toggle('dark-mode-items'));
     let isDark = document.body.classList.toggle('dark-mode');
     localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
   }
@@ -60,7 +59,6 @@ function toggleDarkMode() {
   document.addEventListener('DOMContentLoaded', (event) => {
     if (localStorage.getItem('darkMode') === 'enabled') {
         document.body.classList.add('dark-mode');
-        //document.querySelectorAll('.lt-drk').forEach(el =>el.classList.add('dark-mode-items'));
     }
   });
 

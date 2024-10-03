@@ -1,7 +1,4 @@
-:root{
-    
-    color-scheme: light dark;
-    
+:root{    
     --brand-primary: #0768AC;
     --brand-secondary: #03C180;
     --bg_default: #FFFFFF;
@@ -17,6 +14,4 @@
     --dark-lines-color: #000000;
     --dark-body-text: #EDEDED;
     --dark-heart-color: #DC143C;
-    /* --bg-body:var(--dark-bg_default);
-    --body-text: var(--dark-body-text) */
 }
