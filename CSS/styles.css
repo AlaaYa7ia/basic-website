@@ -47,6 +47,7 @@ main {
 
 #website-name{
   color: var(--brand-primary);
+  margin-left: 30px;
 }
 
 button {
@@ -104,10 +105,12 @@ header{
 }
 .welcome-msg{
   color:var(--brand-secondary);
+  margin: 0%;
   margin-right: 10px;
 }
 .sub-welcome-msg{
   color:var(--body-text);
+  margin: 0%;
   margin-left: 100px;
   margin-right: 10px;
 }
@@ -242,4 +245,32 @@ footer{
   --bg_body: var(--dark-bg_body);
   --lines-color: var(--dark-lines-color);
   --body-text: var(--dark-body-text);
+}
+
+
+/**Details page**/
+
+.topic-details{
+  background-color: var(--bg-details);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.topic-details-iner{
+  width: 30%;
+  margin-left: 20vw;
+}
+
+.category-d{
+  margin: 0%;
+  color: var(--brand-secondary);
+
+}
+
+.topic-d{
+  margin: 0%;
+}
+
+.text-d{
+ margin-top: 20px;
+ margin-bottom: 20px;
 }
