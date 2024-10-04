@@ -1,6 +1,31 @@
 @import url("https://fonts.cdnfonts.com/css/nunito-sans");
 
-body {
+@media (max-width: 480px) {
+  body{
+    font-family: "Nunito Sans";
+    font-size: large;
+    height: 100vh;
+    background-color:var(--bg_body);
+    color:var(--body-text);
+    margin:0%;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body{
+    font-family: "Nunito Sans";
+    font-size: medium;
+    height: 100vh;
+    background-color:var(--bg_body);
+    color:var(--body-text);
+    margin:0%;
+  }
+
+}
+
+@media (min-width: 769px) {
+  body {
     font-family: "Nunito Sans";
     font-size:x-small;
     height: 100vh;
@@ -8,6 +33,10 @@ body {
     color:var(--body-text);
     margin:0%;
 }
+}
+
+
+
 
 main {
   min-height: 100vh;
@@ -75,10 +104,12 @@ header{
 }
 .welcome-msg{
   color:var(--brand-secondary);
+  margin-right: 10px;
 }
 .sub-welcome-msg{
   color:var(--body-text);
   margin-left: 100px;
+  margin-right: 10px;
 }
 
 /** search bar **/
@@ -152,6 +183,7 @@ select
   background-color: var(--bg_default);
   height: fit-content;
   width: 100%;
+  max-width: 286px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
