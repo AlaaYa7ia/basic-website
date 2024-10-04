@@ -253,11 +253,16 @@ footer{
 .topic-details{
   background-color: var(--bg-details);
   margin-bottom: 20px;
-  padding: 20px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
 }
 .topic-details-iner{
   width: 30%;
-  margin-left: 20vw;
+  margin-right: 10px;
+  /* flex-grow: 1; */
 }
 
 .category-d{
@@ -284,6 +289,9 @@ footer{
   flex-direction: column;
   overflow: hidden;
   box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 150px;
+
 }
 
 .ticket-info-container{
