@@ -16,7 +16,7 @@ function fetchJSONData() {
 
             for(let item of data){
                 output += `
-                    <div class="card  ">
+                    <div class="card">
                         <div class="img-container  ">
                             <img src="./assets/Logos/${item.image}" alt="">
                         </div>
@@ -47,12 +47,14 @@ fetchJSONData();
 function toggleDarkMode() {
     let isDark = document.body.classList.toggle('dark-mode');
     localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-  }
+}
   
-  // On page load
-  document.addEventListener('DOMContentLoaded', (event) => {
+// On page load
+document.addEventListener('DOMContentLoaded', (event) => {
     if (localStorage.getItem('darkMode') === 'enabled') {
         document.body.classList.add('dark-mode');
     }
-  });
+});
+
+
 

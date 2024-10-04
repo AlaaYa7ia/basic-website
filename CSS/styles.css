@@ -222,7 +222,7 @@ img {
   &::before {
     content: '★★★★★';
     letter-spacing: 3px;
-    background: linear-gradient(90deg, rgb(234, 189, 11) var(--percent), rgb(223, 231, 210) var(--percent));
+    background: linear-gradient(90deg, rgb(234, 189, 11) var(--percent), rgb(232, 237, 223) var(--percent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
