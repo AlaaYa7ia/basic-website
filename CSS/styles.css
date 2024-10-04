@@ -302,3 +302,16 @@ footer{
   border-radius: 0%;
   padding: 7px;
 }
+
+.list{
+  background-color: var(--bg_default);
+  border-radius: 5px;
+  width: 345px;
+  border: 1px solid var(--lines-color);
+}
+.list-item{
+  border: 1px solid var(--lines-color);
+  margin: 0;
+  padding: 10px;
+
+}
