@@ -210,8 +210,22 @@ img {
   height: 100%;
 }
 
-.star{
-  color: rgb(255, 200, 0);
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  
+  display: inline-block;
+  font-size: 20px;
+  font-family: Times;
+  line-height: 1;
+  
+  &::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, rgb(234, 189, 11) var(--percent), rgb(223, 231, 210) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 

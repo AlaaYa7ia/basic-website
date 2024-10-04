@@ -26,13 +26,7 @@ function fetchJSONData() {
                                 <h1  >${item.topic}</h1>
                             </div>
                             <div>
-                                <div class="stars">
-                                    <ion-icon name="star" class="star"></ion-icon>
-                                    <ion-icon name="star" class="star"></ion-icon>
-                                    <ion-icon name="star" class="star"></ion-icon>
-                                    <ion-icon name="star" class="star"></ion-icon>
-                                    <ion-icon name="star-half-outline" class="star"></ion-icon>
-                                </div>
+                                <div class="Stars" style="--rating: ${item.rating};"></div>
                                 <p  >Author: ${item.name}</p>
                             </div>
                         </div>
