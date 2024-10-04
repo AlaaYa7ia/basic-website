@@ -274,3 +274,31 @@ footer{
  margin-top: 20px;
  margin-bottom: 20px;
 }
+
+.ticket{
+  background-color: white;
+  color: black;
+  height: fit-content;
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-info-container{
+  padding: 15px;
+}
+.ticket-info-iner-container{
+  padding: 5px;
+  border: 1px solid gainsboro;
+  text-align: center;
+}
+
+.fav-button{
+  background-color: var(--brand-secondary);
+  border: 0cap;
+  color: white;
+  border-radius: 0%;
+  padding: 7px;
+}
