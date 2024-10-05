@@ -63,7 +63,6 @@
     padding-bottom: 20px;
     display: flex;
   }
-
   
   .topic-details-iner{
     width: 30%;
@@ -112,7 +111,6 @@
     padding-bottom: 20px;
     display: flex;
   }
-
   
   .topic-details-iner{
     width: 30%;
@@ -144,8 +142,6 @@ body {
   margin:0%;
 }
 
-
-
 main {
   min-height: 100vh;
   display: flex;
@@ -165,7 +161,6 @@ button {
   color:var(--body-text);
 
 }
-
 
 .display-flex {
   display: flex;
@@ -211,11 +206,13 @@ header{
   text-align: center;
   background-color: var(--bg_default);
 }
+
 .welcome-msg{
   color:var(--brand-secondary);
   margin: 0%;
   margin-right: 10px;
 }
+
 .sub-welcome-msg{
   color:var(--body-text);
   margin: 0%;
@@ -240,9 +237,11 @@ header{
   flex-direction: column;
   background-color: var(--bg_default);
 }
+
 .search-box{
   flex-grow: 1;
 }
+
 #search{
   flex-grow: 1;
   margin-bottom: 10px;
@@ -256,6 +255,7 @@ header{
   margin-top: 12px; 
   margin-left: 5px;
 }
+
 .select-wrap 
 {
   border-left: 1px solid var(--lines-color);
@@ -350,6 +350,7 @@ footer{
 
 
 /**dark mode**/
+
 .dark-mode {
   --bg_default: var(--dark-bg_default);
   --bg_body: var(--dark-bg_body);
@@ -363,7 +364,6 @@ footer{
 .category-d{
   margin: 0%;
   color: var(--brand-secondary);
-
 }
 
 .topic-d{
@@ -374,7 +374,6 @@ footer{
  margin-top: 20px;
  margin-bottom: 20px;
 }
-
 
 .ticket-info-container{
   padding: 15px;
@@ -393,16 +392,15 @@ footer{
   padding: 7px;
 }
 
-
-
 .list-item{
   border: 1px solid var(--lines-color);
   margin: 0;
   padding: 10px;
-
 }
 
+
 /** favourites**/
+
 .favourites{
   background-color: var(--bg_default);
   height: 100px;
@@ -419,22 +417,14 @@ footer{
   background-color: var(--bg_default);
   color: var(--body-text);
   height: fit-content;
-  /* min-height: 430px;
-  min-width: 245px; */
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
-  /* box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.1); */
   border-radius: 5px;
   overflow: hidden;
-
 }
-
 
 .img-container-fav {
   max-width: 100px;
   border-radius: 5px;
   overflow: hidden;
-
-
 }
