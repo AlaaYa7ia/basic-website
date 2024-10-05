@@ -21,6 +21,7 @@
 
   .topic-details-iner{
     text-align:justify;
+    color: white;
   }
 
   .list{
@@ -68,6 +69,7 @@
     width: 30%;
     margin-right: 245px;
     flex-grow: 1;
+    color: white;
   }
 
   .list{
@@ -116,6 +118,8 @@
     width: 30%;
     margin-right: 245px;
     flex-grow: 1;
+    color: white;
+
   }
 
   .list{
