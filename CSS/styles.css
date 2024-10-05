@@ -113,6 +113,7 @@ header{
   margin: 0%;
   margin-left: 100px;
   margin-right: 10px;
+  margin-bottom: 15px;
 }
 
 /** search bar **/
@@ -261,8 +262,8 @@ footer{
 }
 .topic-details-iner{
   width: 30%;
-  margin-right: 10px;
-  /* flex-grow: 1; */
+  margin-right: 245px;
+  flex-grow: 1;
 }
 
 .category-d{
@@ -290,7 +291,9 @@ footer{
   overflow: hidden;
   box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.1);
   position: absolute;
-  right: 150px;
+  right: 15%;
+  margin-top: 100px;
+  z-index: 3;
 
 }
 
@@ -314,8 +317,11 @@ footer{
 .list{
   background-color: var(--bg_default);
   border-radius: 5px;
-  width: 345px;
+  max-width: 345px; 
   border: 1px solid var(--lines-color);
+  margin: 0%;
+  margin-right:255px
+
 }
 .list-item{
   border: 1px solid var(--lines-color);
