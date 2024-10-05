@@ -1,44 +1,40 @@
 @import url("https://fonts.cdnfonts.com/css/nunito-sans");
 
 @media (max-width: 480px) {
-  body{
-    font-family: "Nunito Sans";
-    font-size: large;
-    height: 100vh;
-    background-color:var(--bg_body);
-    color:var(--body-text);
-    margin:0%;
-  }
-
   .ticket{
     background-color: white;
     color: black;
     height: fit-content;
-    width: 245px;
+    min-height: 430px;
+    min-width: 245px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.1);
-    right: 15%;
-    margin-top: 100px;
-    z-index: 0;
-    margin-left: 15vw;
+  }
+
+  .topic-details{
+    background-color: var(--bg-details);
+    padding: 7vw;
+    display: flex;
+  }
+
+  .topic-details-iner{
+    text-align:justify;
+  }
+
+  .list{
+    background-color: var(--bg_default);
+    border-radius: 5px;
+    border: 1px solid var(--lines-color);
     margin-bottom: 5px;
-  
+    margin-right:calc(255px+ 15vw);
+
   }
 
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  body{
-    font-family: "Nunito Sans";
-    font-size: medium;
-    height: 100vh;
-    background-color:var(--bg_body);
-    color:var(--body-text);
-    margin:0%;
-  }
-
+@media (min-width: 480px) and (max-width: 768px) {
   .ticket{
     background-color: white;
     color: black;
@@ -55,20 +51,38 @@
     margin-left: 15vw;
     margin-bottom: 5px;
   
+  }
+
+  .topic-details{
+    background-color: var(--bg-details);
+    margin-bottom: 20px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+  }
+
+  
+  .topic-details-iner{
+    width: 30%;
+    margin-right: 245px;
+    flex-grow: 1;
+  }
+
+  .list{
+    background-color: var(--bg_default);
+    border-radius: 5px;
+    max-width: 300px; 
+    border: 1px solid var(--lines-color);
+    margin: 0%;
+    margin-right:calc(15vw + 255px);
+    margin-left: 15vw;
   }
 
 }
 
 @media (min-width: 769px) {
-  body {
-    font-family: "Nunito Sans";
-    font-size:x-small;
-    height: 100vh;
-    background-color:var(--bg_body);
-    color:var(--body-text);
-    margin:0%;
-  }
-
   .ticket{
     background-color: white;
     color: black;
@@ -86,8 +100,45 @@
     margin-bottom: 5px;
   
   }
+
+  .topic-details{
+    background-color: var(--bg-details);
+    margin-bottom: 20px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+  }
+
+  
+  .topic-details-iner{
+    width: 30%;
+    margin-right: 245px;
+    flex-grow: 1;
+  }
+
+  .list{
+    background-color: var(--bg_default);
+    border-radius: 5px;
+    max-width: 345px; 
+    border: 1px solid var(--lines-color);
+    margin: 0%;
+    margin-right:calc(15vw + 255px);
+
+    margin-left: 15vw;
+  }
+
 }
 
+body {
+  font-family: "Nunito Sans";
+  font-size:x-small;
+  height: 100vh;
+  background-color:var(--bg_body);
+  color:var(--body-text);
+  margin:0%;
+}
 
 
 
@@ -290,6 +341,7 @@ img {
 
 footer{
   text-align: center;
+  padding-bottom: 10px;
 }
 
 
@@ -303,21 +355,6 @@ footer{
 
 
 /**Details page**/
-
-.topic-details{
-  background-color: var(--bg-details);
-  margin-bottom: 20px;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-}
-.topic-details-iner{
-  width: 30%;
-  margin-right: 245px;
-  flex-grow: 1;
-}
 
 .category-d{
   margin: 0%;
@@ -352,17 +389,8 @@ footer{
   padding: 7px;
 }
 
-.list{
-  background-color: var(--bg_default);
-  border-radius: 5px;
-  max-width: 345px; 
-  border: 1px solid var(--lines-color);
-  margin: 0%;
-  margin-right:calc(255px+ 15vw);
-  margin-left: 15vw;
 
 
-}
 .list-item{
   border: 1px solid var(--lines-color);
   margin: 0;
