@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./CSS/favourites.css" />
 
     <script src="./scripts/darkLightMode.js"></script>
+    <script src="./scripts/favouratiesPanel.js"></script>
   </head>
   <body>
     <header>
@@ -22,7 +23,9 @@
           <button onclick="toggleDarkMode()">
             <ion-icon name="moon-outline"></ion-icon> Dark Mode
           </button>
-          <button><ion-icon name="heart-outline"></ion-icon> Favourites</button>
+          <button onclick="showFavourites()">
+            <ion-icon name="heart-outline"></ion-icon> Favourites
+          </button>
         </div>
       </div>
 
@@ -124,6 +127,27 @@
       <ion-icon name="heart" style="color: red; margin-top: 5px"></ion-icon>
       &copy; 2023
     </footer>
+
+    <div class="favourites">
+      <p>My Favourite Topcs</p>
+      <div class="display-flex">
+        <div class="ticket-fav">
+          <div class="img-container-fav">
+            <img src="./assets/Logos/html.png" alt="" />
+          </div>
+          <p style="margin: 0%">HTML</p>
+          <div class="Stars" style="--rating: 3.5; font-size: medium"></div>
+        </div>
+        <div class="ticket-fav">
+          <div class="img-container-fav">
+            <img src="./assets/Logos/css.webp" alt="" />
+          </div>
+          <p style="margin: 0%">CSS</p>
+          <div class="Stars" style="--rating: 3.58; font-size: medium"></div>
+        </div>
+      </div>
+    </div>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

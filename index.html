@@ -15,6 +15,7 @@
 
     <script type="module" src="./scripts/homeScripts.js"></script>
     <script src="./scripts/darkLightMode.js"></script>
+    <script src="./scripts/favouratiesPanel.js"></script>
   </head>
   <body>
     <header>
@@ -24,7 +25,9 @@
           <button onclick="toggleDarkMode()">
             <ion-icon name="moon-outline"></ion-icon> Dark Mode
           </button>
-          <button><ion-icon name="heart-outline"></ion-icon> Favourites</button>
+          <button onclick="showFavourites()">
+            <ion-icon name="heart-outline"></ion-icon> Favourites
+          </button>
         </div>
       </div>
 
