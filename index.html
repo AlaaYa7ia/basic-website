@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./CSS/variables.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/variables.css" />
+    <link rel="stylesheet" href="./CSS/homePage.css" />
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link rel="stylesheet" href="./CSS/darkMode.css" />
+    <link rel="stylesheet" href="./CSS/searchBar.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/cards.css" />
+    <link rel="stylesheet" href="./CSS/favourites.css" />
+
     <script src="scripts.js"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="display-flex main-header  ">
-            <h3 id="website-name">Web Topics</h3>
-            <div class="actionsList">
-                <button   onclick="toggleDarkMode()"><ion-icon name="moon-outline"></ion-icon> Dark Mode</button>
-                <button  ><ion-icon name="heart-outline"></ion-icon> Favourites</button>
-
-            </div>
+      <div class="display-flex main-header">
+        <h3 id="website-name">Web Topics</h3>
+        <div class="actionsList">
+          <button onclick="toggleDarkMode()">
+            <ion-icon name="moon-outline"></ion-icon> Dark Mode
+          </button>
+          <button><ion-icon name="heart-outline"></ion-icon> Favourites</button>
         </div>
+      </div>
 
-        <div class="triangles  ">
-            <div id ='tr-right'></div>
-            <div id ='tr-left'></div>
-        </div>
+      <div class="triangles">
+        <div id="tr-right"></div>
+        <div id="tr-left"></div>
+      </div>
 
-        <div class="sub-header  ">
-            <h2 class="welcome-msg">Welcome to our website!</h2>
-            <p class="sub-welcome-msg  ">We have a new design that's fresh, modern, and easy to use.</p>
-        </div>
+      <div class="sub-header">
+        <h2 class="welcome-msg">Welcome to our website!</h2>
+        <p class="sub-welcome-msg">
+          We have a new design that's fresh, modern, and easy to use.
+        </p>
+      </div>
     </header>
     <main>
-        <div class="search-bar display-flex">
-            <div class="search-box display-flex">
-                <ion-icon id ="search-outline" name="search-outline"></ion-icon>
-                <input   type="search" placeholder="     Search the website..." id="search"/>
-            </div>
-            <div class="filters display-flex">
-                <div class="select-wrap sort  ">
-                    <label for="sel1">Sort by:</label>
-                    <select class =' ' name="sel1" id="sel1">
-                      <option>Default</option>
-                    </select>
-                </div>
-                <div class="select-wrap filter  ">
-                    <label for="sel2">Filter by:</label>
-                    <select class =' ' name="sel2" id="sel2">
-                      <option>Default</option>
-                    </select>
-                </div>
-            </div>
+      <div class="search-bar display-flex">
+        <div class="search-box display-flex">
+          <ion-icon id="search-outline" name="search-outline"></ion-icon>
+          <input
+            type="search"
+            placeholder="     Search the website..."
+            id="search"
+          />
         </div>
+        <div class="filters display-flex">
+          <div class="select-wrap sort">
+            <label for="sel1">Sort by:</label>
+            <select class=" " name="sel1" id="sel1">
+              <option>Default</option>
+            </select>
+          </div>
+          <div class="select-wrap filter">
+            <label for="sel2">Filter by:</label>
+            <select class=" " name="sel2" id="sel2">
+              <option>Default</option>
+            </select>
+          </div>
+        </div>
+      </div>
 
-        <div class="topics-counter">
-        </div>
+      <div class="topics-counter"></div>
 
-        <div class="items">            
-        </div>
+      <div class="items"></div>
     </main>
     <footer>
-        Developed with <ion-icon name="heart" style="color: red; margin-top: 5px;"></ion-icon> &copy; 2023
+      Developed with
+      <ion-icon name="heart" style="color: red; margin-top: 5px"></ion-icon>
+      &copy; 2023
     </footer>
     <div class="favourites">
-        <p>My Favourite Topcs</p>
-        <div class="display-flex">
-            <div class="ticket-fav">
-                <div class="img-container-fav">
-                    <img src="./assets/Logos/html.png" alt="">
-                </div>
-                    <p style="margin: 0%;">HTML</p>
-                    <div class="Stars" style="--rating: 3.5; font-size: medium;"></div>
-            </div>
-            <div class="ticket-fav">
-                <div class="img-container-fav">
-                    <img src="./assets/Logos/css.webp" alt="">
-                </div>
-                    <p style="margin: 0%;">CSS</p>
-                    <div class="Stars" style="--rating: 3.58; font-size: medium;"></div>
-            </div>
-            
+      <p>My Favourite Topcs</p>
+      <div class="display-flex">
+        <div class="ticket-fav">
+          <div class="img-container-fav">
+            <img src="./assets/Logos/html.png" alt="" />
+          </div>
+          <p style="margin: 0%">HTML</p>
+          <div class="Stars" style="--rating: 3.5; font-size: medium"></div>
         </div>
-
+        <div class="ticket-fav">
+          <div class="img-container-fav">
+            <img src="./assets/Logos/css.webp" alt="" />
+          </div>
+          <p style="margin: 0%">CSS</p>
+          <div class="Stars" style="--rating: 3.58; font-size: medium"></div>
+        </div>
+      </div>
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

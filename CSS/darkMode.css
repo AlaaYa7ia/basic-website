@@ -1,0 +1,8 @@
+/**dark mode**/
+
+.dark-mode {
+  --bg_default: var(--dark-bg_default);
+  --bg_body: var(--dark-bg_body);
+  --lines-color: var(--dark-lines-color);
+  --body-text: var(--dark-body-text);
+}

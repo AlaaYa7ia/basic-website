@@ -1,77 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details</title>
-    <link rel="stylesheet" href="../CSS/variables.css">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/variables.css" />
+    <link rel="stylesheet" href="./CSS/detailsPage.css" />
+    <link rel="stylesheet" href="./CSS/darkMode.css" />
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link rel="stylesheet" href="./CSS/cards.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/favourites.css" />
+
     <script src="../scripts.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="display-flex main-header  ">
-            <h3 id="website-name">Web Topics</h3>
-            <div class="actionsList">
-                <button   onclick="toggleDarkMode()"><ion-icon name="moon-outline"></ion-icon> Dark Mode</button>
-                <button  ><ion-icon name="heart-outline"></ion-icon> Favourites</button>
-
-            </div>
+      <div class="display-flex main-header">
+        <h3 id="website-name">Web Topics</h3>
+        <div class="actionsList">
+          <button onclick="toggleDarkMode()">
+            <ion-icon name="moon-outline"></ion-icon> Dark Mode
+          </button>
+          <button><ion-icon name="heart-outline"></ion-icon> Favourites</button>
         </div>
+      </div>
 
-        <div class="triangles  ">
-            <div id ='tr-right'></div>
-            <div id ='tr-left'></div>
-        </div>
+      <div class="triangles">
+        <div id="tr-right"></div>
+        <div id="tr-left"></div>
+      </div>
 
-        <div class="sub-header  ">
-            <h2 class="welcome-msg">Welcome to our website!</h2>
-            <p class="sub-welcome-msg  ">We have a new design that's fresh, modern, and easy to use.</p>
-        </div>
+      <div class="sub-header">
+        <h2 class="welcome-msg">Welcome to our website!</h2>
+        <p class="sub-welcome-msg">
+          We have a new design that's fresh, modern, and easy to use.
+        </p>
+      </div>
     </header>
 
     <div class="ticket">
-        <div class="img-container">
-            <img src="./assets/Logos/html.png" alt="">
+      <div class="img-container">
+        <img src="./assets/Logos/html.png" alt="" />
+      </div>
+      <div class="ticket-info-container">
+        <p>HTML by Sara Smith</p>
+        <div class="ticket-info-iner-container">
+          <p>interested about this topic?</p>
+          <button class="fav-button">
+            Add to Favourites <ion-icon name="heart-outline"></ion-icon>
+          </button>
+          <p style="color: gainsboro">Unlimited Credits</p>
         </div>
-        <div class="ticket-info-container">
-            <p>HTML by Sara Smith</p>
-            <div class="ticket-info-iner-container">
-                <p> interested about this topic?</p>
-                <button class="fav-button" >Add to Favourites <ion-icon name="heart-outline"></ion-icon></button>
-                <p style="color: gainsboro;">Unlimited Credits</p>
-            </div>
-        </div>
+      </div>
     </div>
 
     <div class="topic-details">
-        <div class="topic-details-iner">
-            <p class="category-d">Web Development Languages</p>
-            <h1 class="topic-d">HTML</h1>
-            <div class="Stars" style="--rating: 3.5;"></div>
-            <p class="text-d">HTML (Hypertext Markup Language) is the standard markup language for creating web pages and other information that can be displayed in a web browser. It provides a structure for content and defines how it should be displayed on a web page, including text, images, and multimedia. HTML is essential for creating static web pages and is a foundational technology for the World Wide Web.</p>
-        </div>
-
+      <div class="topic-details-iner">
+        <p class="category-d">Web Development Languages</p>
+        <h1 class="topic-d">HTML</h1>
+        <div class="Stars" style="--rating: 3.5"></div>
+        <p class="text-d">
+          HTML (Hypertext Markup Language) is the standard markup language for
+          creating web pages and other information that can be displayed in a
+          web browser. It provides a structure for content and defines how it
+          should be displayed on a web page, including text, images, and
+          multimedia. HTML is essential for creating static web pages and is a
+          foundational technology for the World Wide Web.
+        </p>
+      </div>
     </div>
 
-    <!-- <main style="margin-left: 15vw; margin-right: 15vw;"> -->
-            
-            <div class="list">
-                <h1 class="list-item">HTML Sub Topics</h1>
-                <p class="list-item"><ion-icon name="checkmark-circle-outline" style="color: var(--brand-secondary); margin-right: 2px;"></ion-icon> HTML syntax and structure</p>
-                <p class="list-item"><ion-icon name="checkmark-circle-outline" style="color: var(--brand-secondary); margin-right: 2px;"></ion-icon> HTML elements and attributes</p>
-                <p class="list-item"><ion-icon name="checkmark-circle-outline" style="color: var(--brand-secondary); margin-right: 2px;"></ion-icon> HTML forms and input elements</p>
-                <p class="list-item"><ion-icon name="checkmark-circle-outline" style="color: var(--brand-secondary); margin-right: 2px;"></ion-icon> HTML tables and lists</p>
-                <p class="list-item"><ion-icon name="checkmark-circle-outline" style="color: var(--brand-secondary); margin-right: 2px;"></ion-icon> HTML multimedia elements (audio, video, images)</p>
-                <p class="list-item"><ion-icon name="checkmark-circle-outline" style="color: var(--brand-secondary); margin-right: 2px;"></ion-icon> HTML accessibility and semantic markup</p>
-            </div>
-         
-    <!-- </main> -->
+    <main>
+      <div class="list">
+        <h1 class="list-item">HTML Sub Topics</h1>
+        <p class="list-item">
+          <ion-icon
+            name="checkmark-circle-outline"
+            style="color: var(--brand-secondary); margin-right: 2px"
+          ></ion-icon>
+          HTML syntax and structure
+        </p>
+        <p class="list-item">
+          <ion-icon
+            name="checkmark-circle-outline"
+            style="color: var(--brand-secondary); margin-right: 2px"
+          ></ion-icon>
+          HTML elements and attributes
+        </p>
+        <p class="list-item">
+          <ion-icon
+            name="checkmark-circle-outline"
+            style="color: var(--brand-secondary); margin-right: 2px"
+          ></ion-icon>
+          HTML forms and input elements
+        </p>
+        <p class="list-item">
+          <ion-icon
+            name="checkmark-circle-outline"
+            style="color: var(--brand-secondary); margin-right: 2px"
+          ></ion-icon>
+          HTML tables and lists
+        </p>
+        <p class="list-item">
+          <ion-icon
+            name="checkmark-circle-outline"
+            style="color: var(--brand-secondary); margin-right: 2px"
+          ></ion-icon>
+          HTML multimedia elements (audio, video, images)
+        </p>
+        <p class="list-item">
+          <ion-icon
+            name="checkmark-circle-outline"
+            style="color: var(--brand-secondary); margin-right: 2px"
+          ></ion-icon>
+          HTML accessibility and semantic markup
+        </p>
+      </div>
+    </main>
 
-   <footer>
-        Developed with <ion-icon name="heart" style="color: red; margin-top: 5px;"></ion-icon> &copy; 2023
+    <footer>
+      Developed with
+      <ion-icon name="heart" style="color: red; margin-top: 5px"></ion-icon>
+      &copy; 2023
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

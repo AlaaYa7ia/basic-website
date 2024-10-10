@@ -1,0 +1,49 @@
+/**Details page**/
+
+@import url("https://fonts.cdnfonts.com/css/nunito-sans");
+
+body {
+  font-family: "Nunito Sans";
+  font-size: x-small;
+  height: 100vh;
+  background-color: var(--bg_body);
+  color: var(--body-text);
+  margin: 0%;
+}
+
+.category-d {
+  margin: 0%;
+  color: var(--brand-secondary);
+}
+
+.topic-d {
+  margin: 0%;
+}
+
+.text-d {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ticket-info-container {
+  padding: 15px;
+}
+.ticket-info-iner-container {
+  padding: 5px;
+  border: 1px solid gainsboro;
+  text-align: center;
+}
+
+.fav-button {
+  background-color: var(--brand-secondary);
+  border: 0cap;
+  color: white;
+  border-radius: 0%;
+  padding: 7px;
+}
+
+.list-item {
+  border: 1px solid var(--lines-color);
+  margin: 0;
+  padding: 10px;
+}
