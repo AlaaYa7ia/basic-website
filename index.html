@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="./CSS/cards.css" />
     <link rel="stylesheet" href="./CSS/favourites.css" />
 
+    <script type="module" src="./scripts/detailsScripts.js"></script>
     <script type="module" src="./scripts/homeScripts.js"></script>
+    <script src="./scripts/updatestorage.js"></script>
     <script src="./scripts/darkLightMode.js"></script>
     <script src="./scripts/favouratiesBanner.js"></script>
   </head>
@@ -81,14 +83,14 @@
     <div class="favourites">
       <p>My Favourite Topcs</p>
       <div class="display-flex">
-        <div class="ticket-fav">
+        <div class="ticket-fav" onclick="location.href='/details.html'">
           <div class="img-container-fav">
             <img src="./assets/Logos/html.png" alt="" />
           </div>
           <p style="margin: 0%">HTML</p>
           <div class="Stars" style="--rating: 3.5; font-size: medium"></div>
         </div>
-        <div class="ticket-fav">
+        <div class="ticket-fav" onclick="location.href='/details.html'">
           <div class="img-container-fav">
             <img src="./assets/Logos/css.webp" alt="" />
           </div>

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./CSS/footer.css" />
     <link rel="stylesheet" href="./CSS/favourites.css" />
 
+    <script type="module" src="./scripts/detailsScripts.js"></script>
+    <script src="./scripts/updatestorage.js"></script>
     <script src="./scripts/darkLightMode.js"></script>
     <script src="./scripts/favouratiesBanner.js"></script>
   </head>
@@ -41,40 +43,39 @@
         </p>
       </div>
     </header>
-
-    <div class="ticket">
-      <div class="img-container">
-        <img src="./assets/Logos/html.png" alt="" />
-      </div>
-      <div class="ticket-info-container">
-        <p>HTML by Sara Smith</p>
-        <div class="ticket-info-iner-container">
-          <p>interested about this topic?</p>
-          <button class="fav-button">
-            Add to Favourites <ion-icon name="heart-outline"></ion-icon>
-          </button>
-          <p style="color: gainsboro">Unlimited Credits</p>
+    <main>
+      <div class="ticket">
+        <div class="img-container">
+          <img src="./assets/Logos/html.png" alt="" />
+        </div>
+        <div class="ticket-info-container">
+          <p>HTML by Sara Smith</p>
+          <div class="ticket-info-iner-container">
+            <p>interested about this topic?</p>
+            <button class="fav-button">
+              Add to Favourites <ion-icon name="heart-outline"></ion-icon>
+            </button>
+            <p style="color: gainsboro">Unlimited Credits</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="topic-details">
-      <div class="topic-details-iner">
-        <p class="category-d">Web Development Languages</p>
-        <h1 class="topic-d">HTML</h1>
-        <div class="Stars" style="--rating: 3.5"></div>
-        <p class="text-d">
-          HTML (Hypertext Markup Language) is the standard markup language for
-          creating web pages and other information that can be displayed in a
-          web browser. It provides a structure for content and defines how it
-          should be displayed on a web page, including text, images, and
-          multimedia. HTML is essential for creating static web pages and is a
-          foundational technology for the World Wide Web.
-        </p>
+      <div class="topic-details">
+        <div class="topic-details-iner">
+          <p class="category-d">Web Development Languages</p>
+          <h1 class="topic-d">HTML</h1>
+          <div class="Stars" style="--rating: 3.5"></div>
+          <p class="text-d">
+            HTML (Hypertext Markup Language) is the standard markup language for
+            creating web pages and other information that can be displayed in a
+            web browser. It provides a structure for content and defines how it
+            should be displayed on a web page, including text, images, and
+            multimedia. HTML is essential for creating static web pages and is a
+            foundational technology for the World Wide Web.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <main>
       <div class="list">
         <h1 class="list-item">HTML Sub Topics</h1>
         <p class="list-item">
@@ -131,14 +132,14 @@
     <div class="favourites">
       <p>My Favourite Topcs</p>
       <div class="display-flex">
-        <div class="ticket-fav">
+        <div class="ticket-fav" onclick="location.href='/details.html'">
           <div class="img-container-fav">
             <img src="./assets/Logos/html.png" alt="" />
           </div>
           <p style="margin: 0%">HTML</p>
           <div class="Stars" style="--rating: 3.5; font-size: medium"></div>
         </div>
-        <div class="ticket-fav">
+        <div class="ticket-fav" onclick="location.href='/details.html'">
           <div class="img-container-fav">
             <img src="./assets/Logos/css.webp" alt="" />
           </div>

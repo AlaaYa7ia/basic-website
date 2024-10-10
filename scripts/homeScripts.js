@@ -3,7 +3,7 @@ import data from "../topics.js";
 let filteredItems = data;
 
 const creatItem = (item) => {
-  return `<div class="card">
+  return `<div class="card"  onclick="goToDetails(${item.id})" >
             <div class="img-container  ">
               <img src="./assets/Logos/${item.image}" alt="">
             </div>
