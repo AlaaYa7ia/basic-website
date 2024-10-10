@@ -1,5 +1,7 @@
 import data from "../topics.js";
 
+let filteredItems = data;
+
 const creatItem = (item) => {
   return `<div class="card">
             <div class="img-container  ">
@@ -22,11 +24,24 @@ const createList = (list) => {
   return list.map((item) => creatItem(item)).join("");
 };
 
-const renderItems = () => {
-  document.querySelector(".items").innerHTML = createList(data);
-  document.querySelector(
-    ".topics-counter"
-  ).innerHTML = `<h1>"${data.length}" Web Topics Found</h1>`;
+const searchItems = (list, searchText) => {
+  return list.filter((item) =>
+    item.topic.toLowerCase().includes(searchText.toLowerCase().trim())
+  );
 };
 
-document.onload = renderItems();
+const renderItems = () => {
+  document.querySelector(".items").innerHTML = createList(filteredItems);
+  document.querySelector(
+    ".topics-counter"
+  ).innerHTML = `<h1>"${filteredItems.length}" Web Topics Found</h1>`;
+};
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  renderItems();
+});
+
+document.getElementById("search").oninput = (evt) => {
+  filteredItems = searchItems(data, evt.target.value);
+  renderItems();
+};
