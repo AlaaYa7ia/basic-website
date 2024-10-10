@@ -2,5 +2,9 @@
 
 footer {
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: var(--footerSmallHight);
+}
+
+.adjest {
+  --footerSmallHight: var(--footerBigHight);
 }

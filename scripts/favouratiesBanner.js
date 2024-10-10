@@ -1,5 +1,6 @@
 /**show/ hide favouraties panel */
 function showFavourites() {
+  document.getElementsByTagName("footer")[0].classList.toggle("adjest");
   let x = document.getElementsByClassName("favourites")[0];
   if (x.style.display === "none") {
     x.style.display = "flex";
