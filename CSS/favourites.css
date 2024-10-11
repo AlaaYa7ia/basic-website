@@ -2,6 +2,7 @@
 
 .favourites {
   background-color: var(--bg_default);
+  height: 100px;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -14,16 +15,22 @@
 .ticket-fav {
   background-color: var(--bg_default);
   color: var(--body-text);
-  height: fit-content;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   overflow: hidden;
-  cursor: pointer;
+  margin-right: 7px;
+  height: 80%;
+  width: 100px;
 }
 
 .img-container-fav {
   max-width: 100px;
-  border-radius: 5px;
   overflow: hidden;
+  height: 80%;
+}
+
+img {
+  width: 100%;
+  height: fit-content;
 }
