@@ -1,6 +1,25 @@
 import data from "../topics.js";
 
 const createTicket = (card) => {
+  //search the id in fav storage then return the html
+  let content = ``;
+  let favsList = localStorage.getItem("favs");
+  if (favsList === null) {
+    content += `<button type ="button" class="fav-button" onclick = "UpdateFavouraties(${card.id})">
+                Add to Favourites <ion-icon name="heart-outline"></ion-icon>
+                </button>`;
+  } else {
+    if (favsList.includes(card.id)) {
+      content += `<button type ="button" class="remove-button" onclick = "removeFromFavouraties(${card.id})">
+                Remove from Favourites <ion-icon name="trash-outline"></ion-icon>
+                </button>`;
+    } else {
+      content += `<button type ="button" class="fav-button" onclick = "UpdateFavouraties(${card.id})">
+                Add to Favourites <ion-icon name="heart-outline"></ion-icon>
+                </button>`;
+    }
+  }
+
   return `
     <div class="ticket">
         <div class="img-container">
@@ -10,9 +29,7 @@ const createTicket = (card) => {
           <p>HTML by ${card.name}</p>
           <div class="ticket-info-iner-container">
             <p>interested about this topic?</p>
-            <button type ="button" class="fav-button" onclick = "UpdateFavouraties(${card.id})">
-              Add to Favourites <ion-icon name="heart-outline"></ion-icon>
-            </button>
+            ${content}
             <p style="color: gainsboro">Unlimited Credits</p>
           </div>
         </div>

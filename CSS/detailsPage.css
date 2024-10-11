@@ -168,6 +168,15 @@ body {
   padding: 7px;
 }
 
+.remove-button {
+  background-color: var(--heart-color);
+  border: 0cap;
+  color: white;
+  border-radius: 0%;
+  padding: 7px;
+  /* display: none; */
+}
+
 .list-item {
   border: 1px solid var(--lines-color);
   margin: 0;
