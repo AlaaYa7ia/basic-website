@@ -1,4 +1,5 @@
 import data from "../topics.js";
+
 const createTicket = (card) => {
   return `
     <div class="ticket">
@@ -9,7 +10,7 @@ const createTicket = (card) => {
           <p>HTML by ${card.name}</p>
           <div class="ticket-info-iner-container">
             <p>interested about this topic?</p>
-            <button class="fav-button">
+            <button type ="button" class="fav-button" onclick = "UpdateFavouraties(${card.id})">
               Add to Favourites <ion-icon name="heart-outline"></ion-icon>
             </button>
             <p style="color: gainsboro">Unlimited Credits</p>
