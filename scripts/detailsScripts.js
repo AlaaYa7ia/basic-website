@@ -1,7 +1,7 @@
 import data from "../topics.js";
 
 const createTicket = (card) => {
-  //search the id in fav storage then return the html
+  //search the id in favs storage then return the html
   let content = ``;
   let favsList = localStorage.getItem("favs");
   if (favsList === null) {

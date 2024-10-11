@@ -6,6 +6,9 @@ export function addToFavouraties() {
   console.log("here", storedNames);
 
   let content = ``;
+  if (storedNames === null || storedNames.length == 0) {
+    content = `No Topics Selected Yet. Click on the topic you like, then click on "Add to Favouraties" button.`;
+  }
 
   storedNames.forEach((id) => {
     let card = data.filter(function (item) {
