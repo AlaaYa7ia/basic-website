@@ -1,7 +1,6 @@
 # alaa-yahia-project1
 
-Taps first frontend project. 
-Week 2: CSS, HTML, and basic JS.
+CSS, HTML, and JavaScript, a basic web application.
 
 
 
