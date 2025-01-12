@@ -17,3 +17,8 @@ Operating Instructions:
 ** Press the "Mode" button to toggle dark/light mode.
 ** Both pages views are adjusted to mobile and bigger screen devices.
 
+
+
+
+https://github.com/user-attachments/assets/32a1b347-d2dd-4001-82c7-3fef27700b35
+
