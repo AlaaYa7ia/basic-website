@@ -1,4 +1,4 @@
-# alaa-yahia-project1
+# basic-website
 
 CSS, HTML, and JavaScript, a basic web application.
 
